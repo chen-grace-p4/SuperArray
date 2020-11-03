@@ -30,8 +30,9 @@ public class SuperArray {
   }
 
   public String set(int index, String element) {
+    String something = data[index];
     data[index] = element;
-    return data[index];
+    return something;
   }
 
   private void resize() {
