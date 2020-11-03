@@ -6,4 +6,14 @@ public class SuperArray {
     data = new String [10];
   }
 
+  public int size() {
+    int counter = 0;
+    for (int i = 0; i < data.length; i++) {
+      if (data[i] != null) {
+        counter++;
+      }
+    }
+    return counter;
+  }
+
 }
