@@ -5,5 +5,9 @@ public class Tester{
     something.add("hello");
     System.out.println(something.size());
     System.out.println(something.get(0));
+
+    something.set(0, "bye");
+    System.out.println(something.size());
+    System.out.println(something.get(0));
   }
 }
