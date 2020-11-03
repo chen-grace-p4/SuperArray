@@ -16,4 +16,12 @@ public class SuperArray {
     return counter;
   }
 
+  public boolean add(String element) {
+    data[size] = element;
+    size++;
+    return true;
+  }
+
+
+
 }
