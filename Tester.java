@@ -1,6 +1,8 @@
 public class Tester{
   public static void main(String[]args) {
-    SuperArray something = new SuperArray();
+    // SuperArray something = new SuperArray();
+
+    SuperArray something = new SuperArray(20);
     // System.out.println(something.size());
     // something.add("hello");
     // System.out.println(something.size());
