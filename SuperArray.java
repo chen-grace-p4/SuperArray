@@ -71,8 +71,13 @@ public class SuperArray {
     return returnstr;
   }
 
-  // public boolean contains (String s) {
-  //
-  // }
+  public boolean contains (String s) {
+    String boo = "f";
+    for (int i = 0; i < size; i++) {
+      if (data[i].equals(s)) return true;
+    }
+    return false;
+
+  }
 
 }

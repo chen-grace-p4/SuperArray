@@ -37,5 +37,6 @@ public class Tester{
     // System.out.println(something.isEmpty());
 
     System.out.println(something.toString());
+    System.out.println(something.contains("hello"));
   }
 }
