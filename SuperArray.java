@@ -83,4 +83,17 @@ public class SuperArray {
     return false;
   }
 
+  public void add(int index, String element) {
+    if (data[index] != null) {
+      for (int i = size; i >= index; i -= 1) {
+        if (size == data.length) {
+          resize();
+        }
+        data[i+1] = data[i];
+      }
+    }
+    data[index] = element;
+    size = size();
+  }
+
 }
