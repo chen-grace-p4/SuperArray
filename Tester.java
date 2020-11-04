@@ -33,5 +33,7 @@ public class Tester{
     for(int i = 0; i < something.size(); i++){
       System.out.println( something.get(i) );
     }
+    something.clear();
+    System.out.println(something.isEmpty());
   }
 }
