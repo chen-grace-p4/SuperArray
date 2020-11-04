@@ -30,10 +30,12 @@ public class Tester{
 
     System.out.println("Current size of data is " + something.size());
     System.out.println("Data contains...");
-    for(int i = 0; i < something.size(); i++){
-      System.out.println( something.get(i) );
-    }
-    something.clear();
-    System.out.println(something.isEmpty());
+    // for(int i = 0; i < something.size(); i++){
+    //   System.out.println( something.get(i) );
+    // }
+    // something.clear();
+    // System.out.println(something.isEmpty());
+
+    System.out.println(something.toString());
   }
 }
