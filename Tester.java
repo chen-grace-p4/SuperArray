@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Tester{
   public static void main(String[]args) {
     // SuperArray something = new SuperArray();
@@ -57,12 +58,20 @@ public class Tester{
     // System.out.println("Data after addition contains...");
     // System.out.println(something.toString());
 
-    something.remove(3);
-    something.add(3, "newthree!");
-    System.out.println("Current size of data is " + something.size());
-    System.out.println("Data after addition contains...");
-    System.out.println(something.toString());
-    System.out.println(something.indexOf("four")); // should be -1
-    System.out.println(something.indexOf("two")); // should be 1
+    // something.remove(3);
+    // something.add(3, "newthree!");
+    // System.out.println("Current size of data is " + something.size());
+    // System.out.println("Data after addition contains...");
+    // System.out.println(something.toString());
+    // System.out.println(something.indexOf("four")); // should be -1
+    // System.out.println(something.indexOf("two")); // should be 1
+
+    // System.out.println(something.data); //changed data to public temporarily
+    // System.out.println(something.toArray());
+    //Result was:
+    // [Ljava.lang.String;@71dac704
+    // [Ljava.lang.String;@123772c4
+    System.out.println(something);
+    System.out.println(Arrays.toString(something.toArray()));
   }
 }
