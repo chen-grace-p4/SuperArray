@@ -48,19 +48,21 @@ public class Tester{
     something.add("four");
     something.add("five");
     something.add("six");
-    System.out.println("Current size of data is " + something.size());
-    System.out.println("Data contains...");
-    System.out.println(something.toString());
-
-    something.add(3, "anotherthree!");
-    System.out.println("Current size of data is " + something.size());
-    System.out.println("Data after addition contains...");
-    System.out.println(something.toString());
+    // System.out.println("Current size of data is " + something.size());
+    // System.out.println("Data contains...");
+    // System.out.println(something.toString());
+    //
+    // something.add(3, "anotherthree!");
+    // System.out.println("Current size of data is " + something.size());
+    // System.out.println("Data after addition contains...");
+    // System.out.println(something.toString());
 
     something.remove(3);
     something.add(3, "newthree!");
     System.out.println("Current size of data is " + something.size());
     System.out.println("Data after addition contains...");
     System.out.println(something.toString());
+    System.out.println(something.indexOf("four")); // should be -1
+    System.out.println(something.indexOf("two")); // should be 1
   }
 }
