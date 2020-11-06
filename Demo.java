@@ -9,6 +9,32 @@ public class Demo{
     }
   }
 
+  public static SuperArray findOverlap(SuperArray a, SuperArray b) {
+    SuperArray retarray = new SuperArray();
+    removeDuplicates(a);
+    removeDuplicates(b);
+
+    int largersize = 0;
+    int smallersize = 0;
+    if (a.size() > b. size()) {
+      largersize += a.size();
+      smallersize += b.size();
+    } else {
+      largersize += b.size();
+      smallersize += a.size();
+    }
+
+    for (int i = 0; i < largersize; i++) {
+      for (int j = 0; j < smallersize; j ++) {
+        if (a.get(i).equals(b.get(j))) {
+          retarray.add(a.get(i));
+        }
+      }
+    }
+
+    return retarray;
+  }
+
   public static void main(String[]args){
     SuperArray words = new SuperArray();
     //grouped to save vertical space
