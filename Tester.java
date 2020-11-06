@@ -42,13 +42,22 @@ public class Tester{
     // System.out.println(something.toString());
     // System.out.println(something.contains("hello"));
 
-    SuperArray something = new SuperArray(5);
+    SuperArray something = new SuperArray();
     something.add("one");
     something.add("two");
     something.add("three");
     something.add("four");
     something.add("five");
     something.add("six");
+
+    something.remove(0);
+    System.out.println("Current size of data is " + something.size());
+    System.out.println("Data after addition contains...");
+    System.out.println(something.toString());
+
+    // System.out.println(something.indexOf("five"));
+    // System.out.println(something.indexOf("123123"));
+
     // System.out.println("Current size of data is " + something.size());
     // System.out.println("Data contains...");
     // System.out.println(something.toString());
@@ -71,7 +80,7 @@ public class Tester{
     //Result was:
     // [Ljava.lang.String;@71dac704
     // [Ljava.lang.String;@123772c4
-    System.out.println(something);
-    System.out.println(Arrays.toString(something.toArray()));
+    // System.out.println(something);
+    // System.out.println(Arrays.toString(something.toArray()));
   }
 }
