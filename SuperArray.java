@@ -6,10 +6,6 @@ public class SuperArray {
     data = new String [10];
   }
 
-  public SuperArray(int initialCapacity) {
-    data = new String[initialCapacity];
-  }
-
   public int size() {
     int counter = 0;
     for (int i = 0; i < data.length; i++) {
@@ -81,6 +77,10 @@ public class SuperArray {
       if (data[i].equals(s)) return true;
     }
     return false;
+  }
+
+  public SuperArray(int initialCapacity) {
+    data = new String[initialCapacity];
   }
 
   public void add(int index, String element) {
