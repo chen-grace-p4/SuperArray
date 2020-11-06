@@ -56,5 +56,11 @@ public class Tester{
     System.out.println("Current size of data is " + something.size());
     System.out.println("Data after addition contains...");
     System.out.println(something.toString());
+
+    something.remove(3);
+    something.add(3, "newthree!");
+    System.out.println("Current size of data is " + something.size());
+    System.out.println("Data after addition contains...");
+    System.out.println(something.toString());
   }
 }
