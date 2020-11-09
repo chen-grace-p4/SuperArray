@@ -35,6 +35,36 @@ public class Demo{
     return retarray;
   }
 
+  public static SuperArray zip(SuperArray a, SuperArray b) {
+    int largersize = 0;
+    int smallersize = 0;
+    SuperArray largerone = new SuperArray();
+    if (a.size() > b. size()) {
+      largersize += a.size();
+      smallersize += b.size();
+      largerone = a;
+    } else {
+      largersize += b.size();
+      smallersize += a.size();
+      largerone = b;
+    }
+
+    SuperArray retarray = new SuperArray();
+
+    int restoflarger = 0;
+    for (int i = 0; i < smallersize; i++) {
+      retarray.add(a.get(i));
+      retarray.add(b.get(i));
+      restoflarger++;
+    }
+
+    for (int i = restoflarger; i < largersize; i++) {
+      retarray.add(largerone.get(i));
+    }
+
+    return retarray;
+  }
+
   public static void main(String[]args){
     // SuperArray words = new SuperArray();
     // //grouped to save vertical space
@@ -49,11 +79,13 @@ public class Demo{
     SuperArray one = new SuperArray();
     SuperArray two = new SuperArray();
 
-    one.add("fish"); one.add("dog"); one.add("fish"); one.add("cat"); one.add("bird");
-    two.add("fish"); two.add("bird"); two.add("lizard"); two.add("human");
-
+    // one.add("fish"); one.add("dog"); one.add("fish"); one.add("cat"); one.add("bird");
+    // two.add("fish"); two.add("bird"); two.add("lizard"); two.add("human");
+    one.add("a"); one.add("b"); one.add("c"); one.add("d"); one.add("e");
+    two.add("one"); two.add("two"); two.add("three");
     System.out.println(one);
     System.out.println(two);
-    System.out.println(findOverlap(one,two));
+    // System.out.println(findOverlap(one,two));
+    System.out.println(zip(one,two));
   }
 }
