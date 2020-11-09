@@ -136,4 +136,19 @@ public class SuperArray {
     return -1;
   }
 
+  public boolean equals(SuperArray other) {
+    if (this.size() != other.size()) {
+      return false;
+    }
+    String boo = "f";
+    for (int i = 0; i < this.size(); i ++) {
+      if (this.data[i].equals(other.data[i])) {
+        boo = "t";
+      } else {
+        boo = "f";
+      }
+    }
+    return boo == "t";
+  }
+
 }
