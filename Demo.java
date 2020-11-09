@@ -14,18 +14,8 @@ public class Demo{
     removeDuplicates(a);
     removeDuplicates(b);
 
-    int largersize = 0;
-    int smallersize = 0;
-    if (a.size() > b. size()) {
-      largersize += a.size();
-      smallersize += b.size();
-    } else {
-      largersize += b.size();
-      smallersize += a.size();
-    }
-
-    for (int i = 0; i < largersize; i++) {
-      for (int j = 0; j < smallersize; j ++) {
+    for (int i = 0; i < a.size(); i++) {
+      for (int j = 0; j < b.size(); j ++) {
         if (a.get(i).equals(b.get(j))) {
           retarray.add(a.get(i));
         }
