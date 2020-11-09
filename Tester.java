@@ -42,18 +42,22 @@ public class Tester{
     // System.out.println(something.toString());
     // System.out.println(something.contains("hello"));
 
-    SuperArray something = new SuperArray();
-    something.add("one");
-    something.add("two");
-    something.add("three");
-    something.add("four");
-    something.add("five");
-    something.add("six");
-
-    something.remove(0);
-    System.out.println("Current size of data is " + something.size());
-    System.out.println("Data after addition contains...");
-    System.out.println(something.toString());
+    // SuperArray something = new SuperArray();
+    // something.add("one");
+    // something.add("two");
+    // something.add("three");
+    // something.add("four");
+    // something.add("five");
+    // something.add("six");
+    // something.add("seven");
+    // something.add("eight");
+    // something.add("nine");
+    // something.add("ten");
+    //
+    // something.remove(9);
+    // System.out.println("Current size of data is " + something.size());
+    // System.out.println("Data after addition contains...");
+    // System.out.println(something.toString());
 
     // System.out.println(something.indexOf("five"));
     // System.out.println(something.indexOf("123123"));
@@ -82,5 +86,12 @@ public class Tester{
     // [Ljava.lang.String;@123772c4
     // System.out.println(something);
     // System.out.println(Arrays.toString(something.toArray()));
+
+    SuperArray something = new SuperArray();
+    something.add("cat"); something.add("dog"); something.add("cat"); something.add("cat"); something.add("fish");
+    System.out.println(something.lastIndexOf("cat")); //should be 3
+    System.out.println(something.lastIndexOf("dog")); // should be 1
+    System.out.println(something.lastIndexOf("bat")); // should be -1
+    System.out.println(something.lastIndexOf("fish")); // should be 4
   }
 }
