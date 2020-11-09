@@ -137,6 +137,9 @@ public class SuperArray {
   }
 
   public boolean equals(SuperArray other) {
+    if (this.size() == 0 && other.size() == 0) {
+      return true;
+    }
     if (this.size() != other.size()) {
       return false;
     }

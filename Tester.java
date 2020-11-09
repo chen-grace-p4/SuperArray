@@ -88,7 +88,7 @@ public class Tester{
     // System.out.println(Arrays.toString(something.toArray()));
 
     SuperArray something = new SuperArray();
-    something.add("cat"); something.add("dog"); something.add("cat"); something.add("cat"); something.add("fish");
+    // something.add("cat"); something.add("dog"); something.add("cat"); something.add("cat"); something.add("fish");
     // System.out.println(something.lastIndexOf("cat")); //should be 3
     // System.out.println(something.lastIndexOf("dog")); // should be 1
     // System.out.println(something.lastIndexOf("bat")); // should be -1
@@ -96,7 +96,7 @@ public class Tester{
     SuperArray something2 = new SuperArray(20);
     // something2.add("cat"); something2.add("dog"); something2.add("cat"); something2.add("cat"); something2.add("fish");
     // something2.add("cat"); something2.add("dog"); something2.add("cat"); something2.add("cat"); something2.add("fish");
-    something2.add("happy");
+    // something2.add("happy");
     System.out.println(something.equals(something2));
   }
 }
