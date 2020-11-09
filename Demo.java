@@ -36,13 +36,24 @@ public class Demo{
   }
 
   public static void main(String[]args){
-    SuperArray words = new SuperArray();
-    //grouped to save vertical space
-    words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");
-    words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
-    words.add("una");    words.add("ebi");     words.add("toro");
+    // SuperArray words = new SuperArray();
+    // //grouped to save vertical space
+    // words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");
+    // words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
+    // words.add("una");    words.add("ebi");     words.add("toro");
+    //
+    // System.out.println(words);
+    // removeDuplicates(words);
+    // System.out.println(words);  }
 
-    System.out.println(words);
-    removeDuplicates(words);
-    System.out.println(words);  }
+    SuperArray one = new SuperArray();
+    SuperArray two = new SuperArray();
+
+    one.add("fish"); one.add("dog"); one.add("fish"); one.add("cat"); one.add("bird");
+    two.add("fish"); two.add("bird"); two.add("lizard"); two.add("human");
+
+    System.out.println(one);
+    System.out.println(two);
+    System.out.println(findOverlap(one,two));
+  }
 }
