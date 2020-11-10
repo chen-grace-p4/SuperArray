@@ -100,13 +100,23 @@ public class Tester{
     // System.out.println(something.equals(something2));
 
     //TESTING FOR THROW STATEMENTS**************************************
+    // try {
+    //   // SuperArray something = new SuperArray(-1);
+    //   SuperArray something = new SuperArray(10);
+    //   System.out.println("Successfully set capacity!");
+    // }
+    // catch (IllegalArgumentException e) {
+    //   System.out.println("Capacity shouldn't be a negative number!");
+    // }
+
+    SuperArray something2 = new SuperArray(10); //THERES A ERROR HERE WITH GET THROW MESSAGE!!
+    something2.add("hello");
     try {
-      // SuperArray something = new SuperArray(-1);
-      SuperArray something = new SuperArray(10);
-      System.out.println("Successfully set capacity!");
+      something2.get(0);
+      System.out.println("Index successful.");
     }
-    catch (IllegalArgumentException e) {
-      System.out.println("Capacity shouldn't be a negative number!");
+    catch (IndexOutOfBoundsException e) {
+    System.out.println("Index is out of bounds or negative!");
     }
   }
 }
