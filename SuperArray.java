@@ -36,7 +36,7 @@ public class SuperArray {
   }
 
   private void resize() {
-    String [] newdata = new String [data.length*2];
+    String [] newdata = new String [(data.length*2) + 1];
     for (int i = 0; i < data.length; i++) {
       newdata[i] = data[i];
     }
@@ -82,7 +82,7 @@ public class SuperArray {
 
   public SuperArray(int initialCapacity) {
     data = new String[initialCapacity];
-  }
+  } // SHOULDN'T WORK IF CAPACITY IS NEGATIVE
 
   public void add(int index, String element) {
     if (data[index] != null) {
