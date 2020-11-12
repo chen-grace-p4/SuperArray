@@ -115,6 +115,7 @@ public class Tester{
       // something2.get(0);
       // something2.get(3);
       something2.add(1, "hi");
+      something2.remove(-1);
       System.out.println("Index successful.");
       System.out.println(something2);
     }
