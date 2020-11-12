@@ -114,7 +114,7 @@ public class Tester{
     try {
       // something2.get(0);
       // something2.get(3);
-      // something2.add(-1, "hi");
+      something2.add(1, "hi");
       System.out.println("Index successful.");
       System.out.println(something2);
     }
