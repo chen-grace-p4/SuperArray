@@ -94,6 +94,9 @@ public class SuperArray {
   } // SHOULDN'T WORK IF CAPACITY IS NEGATIVE
 
   public void add(int index, String element) {
+    if (index < 0 || index >= size()) {
+      throw new IndexOutOfBoundsException(index + " is out of bounds or negative.");
+    }
     if (data[index] != null) {
       for (int i = size; i >= index; i -= 1) {
         if (size == data.length) {
@@ -162,5 +165,5 @@ public class SuperArray {
     }
     return boo == "t";
   }
- 
+
 }
