@@ -118,6 +118,6 @@ public class Tester{
     }
     catch (IndexOutOfBoundsException e) {
     System.out.println("Index is out of bounds or negative!");
-    }
+    } 
   }
 }
