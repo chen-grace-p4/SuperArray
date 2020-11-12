@@ -112,7 +112,8 @@ public class Tester{
     SuperArray something2 = new SuperArray(10); //THERES A ERROR HERE WITH GET THROW MESSAGE!!
     something2.add("hello");
     try {
-      something2.get(0);
+      // something2.get(0);
+      something2.get(3);
       System.out.println("Index successful.");
     }
     catch (IndexOutOfBoundsException e) {
