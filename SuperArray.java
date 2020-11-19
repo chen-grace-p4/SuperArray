@@ -98,7 +98,7 @@ public class SuperArray {
       throw new IndexOutOfBoundsException(index + " is out of bounds or negative.");
     }
     if (data[index] != null) {
-      for (int i = size; i >= index; i -= 1) {
+      for (int i = size-1; i >= index; i -= 1) {
         if (size == data.length) {
           resize();
         }
